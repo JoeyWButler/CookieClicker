@@ -10,8 +10,6 @@ Destructo.magic = function() {
     Game.Objects.Mine.buy(100 * Destructo.xOfferingsToGodzamok);
     Game.Objects.Factory.sell(100 * Destructo.xOfferingsToGodzamok);
     Game.Objects.Factory.buy(100 * Destructo.xOfferingsToGodzamok);
-    Game.Objects.Bank.sell(100 * Destructo.xOfferingsToGodzamok);
-    Game.Objects.Bank.buy(100 * Destructo.xOfferingsToGodzamok);
     
     
   }
@@ -20,7 +18,7 @@ Destructo.magic = function() {
 
 Destructo.start = function() {
   //if (Destructo.xOfferingsToGodzamok == "undefined") Destructo.xOfferingsToGodzamok = 6; //how many hundreds to sell/buy
-  Destructo.xOfferingsToGodzamok = 1; //how many hundreds to sell/buy
+  Destructo.xOfferingsToGodzamok = 2; //how many hundreds to sell/buy
   Destructo.intervalID = setInterval(Destructo.magic, 10100);
 }
 
